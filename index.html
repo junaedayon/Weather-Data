@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather Data</title>
+</head>
+<body>
+
+<section id="main" class="text-center">
+    <div class="container">
+        <h1 class="text-warning display-1">Weather</h1>
+        <div class="form-group">
+            <input type="text" id="search-city" class="form-control my-4" placeholder="Search City">
+        </div>
+        <input type="submit" type="button" onclick="searchCity()" name="" id="submit" class="btn btn-dark mb-4" value="Search">
+    </div>
+    
+</section>
+
+<section id="output" class="text-center">
+    <div class="container">
+         <div class="card">
+           <div class="card-header" >
+               <h4 id="city-name">-    -    -</h4>
+           </div>
+           <div class="card-body">
+               <h1 id="weather-type" class= ""> - - -</h1>
+               <ul class="list-unstyled">
+                   <li>Temp : <span id="temp">--- </span> F </li>
+                   <li>Min Temp : <span id="min-temp">--- </span> F</li>
+                   <li>Max Temp : <span id="max-temp">--- </span> F</li>
+               </ul>
+           </div>
+    </div>
+</section>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
